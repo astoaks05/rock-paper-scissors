@@ -1,5 +1,3 @@
-//Create a function that returns randomly either rock, paper, or scissors
-
 function compChoice() {
     let randNum;
     randNum = Math.floor(Math.random() * (3 - 1 + 1) + 1);
@@ -8,14 +6,13 @@ function compChoice() {
     } else if (randNum === 2) {
         return 'Paper';
     } else return 'Scissors';
-}
-
-//Make a function that takes two parameters, player choice and computer choice, then return a string that declares the winner 
+} 
 
 let computerChoice = compChoice();
 let playerScore = 0;
 let compScore = 0;
 let results;
+
 function playRound(playerChoice, computerChoice) {
 
     if (playerChoice == computerChoice) {
@@ -56,8 +53,6 @@ function playRound(playerChoice, computerChoice) {
         }
     }
 }
-
-//Write a new function called game() that plays a 5 round game, (use the previous function inside this one)
 
 function game() {
     playerScore = 0;
